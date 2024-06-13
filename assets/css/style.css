@@ -154,6 +154,8 @@ h6 {
   width: 100;
   letter-spacing: 2px;
   text-transform: uppercase;
+  filter: drop-shadow(0 0 10px rgb(253, 253, 253)); /* Drop shadow effect */
+
 }
 
 #header .logo a {
@@ -1570,6 +1572,9 @@ section {
   margin-bottom: 30px;
 }
 
+#footer .footer-top .footer-info .image {
+  filter: drop-shadow(0 0 10px rgb(253, 252, 252)); /* Drop shadow effect */
+}
 #footer .footer-top .footer-info h3 {
   font-size: 28px;
   margin: 0 0 20px 0;
@@ -1617,10 +1622,15 @@ section {
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: 600;
-  color: #fff;
+  color: #fff; /* Text color */
   position: relative;
   padding-bottom: 12px;
-  
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Text glow effect */
+  transition: text-shadow 0.3s ease-in-out; /* Smooth transition for the glow effect */
+}
+
+#footer .footer-top h4:hover {
+  text-shadow: 0 0 15px rgba(255, 255, 255, 1); /* Adjusted glow effect on hover */
 }
 
 #footer .footer-top .footer-links {
